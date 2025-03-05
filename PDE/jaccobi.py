@@ -17,7 +17,7 @@ for i in range(0, 10000):
     new[0] = new[N] = 0
     r = tmp - (new[0:N-1] - 2*new[1:N] + new[2:N+1])/dx**2
     resi.append(max(abs(r)))
-    if (max(abs(r)) < 0.00001):
+    if (max(abs(r)) < 0.0000001):
         print("converge at {} iter".format(i))
         break
     old = new
